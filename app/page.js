@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <>
       <CurrentFileIndicator filePath="/app/page.js" />
-      <PageHeader title="AI Vocabulary Generator" icon={faEarthAmericas} />
+      <PageHeader title="AI單字聯想生成器" icon={faEarthAmericas} />
       <section>
         <div className="container mx-auto">
           <form onSubmit={submitHandler}>
