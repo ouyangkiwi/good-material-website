@@ -25,7 +25,7 @@ export async function POST(req) {
     try {
         // 使用 DALL-E 生成圖片
         const response = await openai.images.generate({
-            model: "dall-e-3",
+            model: "dall-e-2",
             prompt: userInput,
             size: "1024x1024",
             quality: "standard",
