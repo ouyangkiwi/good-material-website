@@ -8,6 +8,7 @@ import PageHeader from "@/components/PageHeader";
 import GeneratorButton from "@/components/GenerateButton";
 import VocabGenResultCard from "@/components/VocabGenResultCard";
 import VocabGenResultPlaceholder from "@/components/VocabGenResultPlaceholder";
+import Toast from "@/components/Toast";
 
 export default function Home() {
   const [userInput, setUserInput] = useState("");
@@ -17,6 +18,7 @@ export default function Home() {
   // 是否在等待回應
   const [isWaiting, setIsWaiting] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showToastMessage, setShowToastMessage] = useState("");
 
   const languageList = ["English", "Japanese", "Korean", "Spanish", "French", "German", "Italian", "Simple Chinese"];
 
@@ -58,6 +60,13 @@ export default function Home() {
       setUserInput('');
     }
   }
+
+  const showToast = (message) => {
+    setShowToastMessage(message);
+    setTimeout(() => {
+      setShowToastMessage("");
+    }, 2000);
+  };
 
   return (
     <>
@@ -106,12 +115,16 @@ export default function Home() {
             <VocabGenResultCard
               key={index}
               result={vocab}
+              setUserInput={setUserInput}
+              showToast={showToast}
             />
           ))}
 
           {/* 移除範例卡片 */}
         </div>
       </section>
+      {/* Toast 提示 */}
+      {showToastMessage && <Toast message={showToastMessage} />}
     </>
   );
 }
