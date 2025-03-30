@@ -47,3 +47,28 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ouyangkiwi/good-material-website.git
 git push -u origin main
+
+#git 指令
+git status 檢視目前所在的分支相關資訊
+
+git checkout 分支名稱 
+==>切換分支
+
+git chekout man  
+==>切換到main分支
+
+git checkout feature/add-firebase  
+==>切換到feature/add-firebase分支
+
+git checkout -b xxxx 
+==>新增想要的分支名稱
+
+git checkout -b hotfix 
+下分支給xxx君來做
+git checkout -b feature/add-tts-and-widget-ui
+
+git checkout -a 
+==>列出所有分支
+
+git push origin HEAD
+//當工作成果完成後把分支推到github 
