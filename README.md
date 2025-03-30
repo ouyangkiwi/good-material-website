@@ -72,3 +72,16 @@ git checkout -a
 
 git push origin HEAD
 //當工作成果完成後把分支推到github 
+import OpenAI from "openai";
+
+const openai = new OpenAI();
+const speechFile = path.resolve("./speech.mp3");
+
+const mp3 = await openai.audio.speech.create({
+  model: "gpt-4o-mini-tts",
+  voice: "coral",
+  input: "Today is a wonderful day to build something people love!",
+  instructions: "Speak in a cheerful and positive tone.",
+});
+
+const buffer = Buffer.from(await mp3.arrayBuffer());
