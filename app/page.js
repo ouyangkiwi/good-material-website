@@ -9,20 +9,32 @@ import GeneratorButton from "@/components/GenerateButton";
 import VocabGenResultCard from "@/components/VocabGenResultCard";
 import VocabGenResultPlaceholder from "@/components/VocabGenResultPlaceholder";
 import Toast from "@/components/Toast";
+import { auth } from '../services/filebase-client';
+import { onAuthStateChanged } from 'firebase/auth';
+import VocabularyForm from '../components/VocabularyForm';
 
 export default function Home() {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [userInput, setUserInput] = useState("");
   const [language, setLanguage] = useState("English");
   // 所有的單字生成結果清單
   const [vocabList, setVocabList] = useState([]);
   // 是否在等待回應
   const [isWaiting, setIsWaiting] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [showToastMessage, setShowToastMessage] = useState("");
 
   const languageList = ["English", "Japanese", "Korean", "Spanish", "French", "German", "Italian", "Simple Chinese"];
 
-  // 在組件載入時獲取歷史資料
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+      setLoading(false);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   useEffect(() => {
     const fetchVocabHistory = async () => {
       try {
@@ -37,7 +49,7 @@ export default function Home() {
     };
 
     fetchVocabHistory();
-  }, []); // 空依賴陣列表示只在組件首次載入時執行
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -68,63 +80,45 @@ export default function Home() {
     }, 2000);
   };
 
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500 mx-auto"></div>
+          <p className="mt-4 text-teal-600">載入中...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <>
-      <CurrentFileIndicator filePath="/app/page.js" />
-      <PageHeader title="AI單字聯想生成器" icon={faEarthAmericas} />
-      <section>
-        <div className="container mx-auto">
-          <form onSubmit={submitHandler}>
-            <div className="flex">
-              <div className="w-3/5 px-2">
-                <input
-                  value={userInput}
-                  onChange={(e) => setUserInput(e.target.value)}
-                  type="text"
-                  className="border-2 focus:border-pink-500 w-full block p-3 rounded-lg"
-                  placeholder="Enter a word or phrase 請輸入想學習的單字或片語"
-                  required
-                />
-              </div>
-              <div className="w-1/5 px-2">
-                <select
-                  className="border-2 w-full block p-3 rounded-lg"
-                  value={language}
-                  onChange={(e) => setLanguage(e.target.value)}
-                  required
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white pt-16">
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-2xl mx-auto">
+          {user ? (
+            <VocabularyForm />
+          ) : (
+            <div className="text-center bg-white p-8 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold text-teal-900 mb-4">請先登入</h2>
+              <p className="text-teal-700 mb-6">您需要登入才能使用單字生成功能</p>
+              <div className="space-x-4">
+                <a
+                  href="/SIGN-IN"
+                  className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition-colors"
                 >
-                  {
-                    languageList.map(language => <option key={language} value={language}>{language}</option>)
-                  }
-                </select>
-              </div>
-              <div className="w-1/5 px-2">
-                <GeneratorButton />
+                  登入
+                </a>
+                <a
+                  href="/SIGN-UP"
+                  className="bg-white text-teal-600 px-6 py-2 rounded-md border border-teal-600 hover:bg-teal-50 transition-colors"
+                >
+                  註冊
+                </a>
               </div>
             </div>
-          </form>
+          )}
         </div>
-      </section>
-      <section>
-        <div className="container mx-auto">
-          {/* 等待後端回應時要顯示的載入畫面 */}
-          {loading ? <VocabGenResultPlaceholder /> : null}
-
-          {/* 顯示所有單字卡 */}
-          {vocabList.map((vocab, index) => (
-            <VocabGenResultCard
-              key={index}
-              result={vocab}
-              setUserInput={setUserInput}
-              showToast={showToast}
-            />
-          ))}
-
-          {/* 移除範例卡片 */}
-        </div>
-      </section>
-      {/* Toast 提示 */}
-      {showToastMessage && <Toast message={showToastMessage} />}
-    </>
+      </div>
+    </div>
   );
 }
