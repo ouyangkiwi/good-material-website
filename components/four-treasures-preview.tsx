@@ -126,8 +126,8 @@ export function FourTreasuresPreview() {
         <div className="group relative overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
           <div className="aspect-square overflow-hidden">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%A2%A8_%E8%83%A1%E9%96%8B%E6%96%87%E4%BA%94%E5%8D%81%E9%80%B1%E5%B9%B4.jpg-Ij9Yd9Iy9Ij9Yd9Iy9Ij9Yd9Iy9Ij9Yd9Iy.jpeg"
-              alt="硯"
+              src="/images/inkstone.png"
+              alt="硯台"
               width={400}
               height={400}
               className="h-full w-full object-cover transition-transform group-hover:scale-105"
@@ -136,7 +136,7 @@ export function FourTreasuresPreview() {
           <div className="p-4">
             <h3 className="text-xl font-semibold">硯</h3>
             <p className="mt-2 text-sm text-gray-600">
-              硯台是研墨的工具，也是文人雅士的珍藏，端硯、歙硯、洮硯等，各具特色，各有千秋。
+              硯台不僅是研墨的工具，更是文人雅士的珍藏。圖中精美的端硯，黑色光滑的研墨面能充分發揮墨的特性，與精美的墨塊相得益彰，共同成就書法藝術的墨韻之美。
             </p>
             <Link
               href="/four-treasures/inkstone"

@@ -190,33 +190,33 @@ export default function FourTreasuresPage() {
               <div className="order-2 md:order-1">
                 <h2 className="text-3xl font-bold tracking-tight">硯</h2>
                 <p className="mt-4 text-gray-600">
-                  硯是中國書法藝術的重要工具，其歷史可追溯至新石器時代。硯的主要功能是研墨，但同時也是文人雅士的珍藏品。圖中展示的是傳統的硯台，以及古硯和墨塊，體現了文房四寶的精湛工藝。
+                  硯是中國書法藝術的重要工具，其歷史可追溯至新石器時代。硯的主要功能是研墨，但同時也是文人雅士的珍藏品。圖中展示的是精美的端硯，黑色橢圓形硯台具有光滑的研墨面，旁邊的石硯則刻有古老題詞，還有胡開文墨廠出品的精美墨塊，這些都是書法創作中不可或缺的寶貴工具。
                 </p>
                 <div className="mt-6 space-y-4">
                   <div>
                     <h3 className="text-xl font-semibold">硯的種類</h3>
                     <p className="mt-2 text-gray-600">
-                      根據產地的不同，硯可分為端硯、歙硯、洮硯等。端硯產於廣東肇慶，質地細膩，發墨快；歙硯產於安徽歙縣，質地堅硬，發墨慢；洮硯產於甘肅臨洮，質地溫潤，發墨適中。
+                      根據產地的不同，硯可分為端硯、歙硯、洮硯等。不同的硯石有不同的特性，適合不同的書法風格。
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">硯的選擇</h3>
                     <p className="mt-2 text-gray-600">
-                      選擇硯時，應考慮硯的質地、研墨效果和書寫風格。好的硯應該質地細膩，研墨效果好，使用壽命長。初學者可選擇中小型硯台，方便使用和保養。
+                      選擇硯時，應考慮硯的質地、研墨效果和書寫風格。好的硯應該質地細膩，研墨效果好，使用壽命長。
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">硯的保養</h3>
                     <p className="mt-2 text-gray-600">
-                      硯應存放在乾燥通風的環境中，避免陽光直射和潮濕環境。使用後應及時清洗，並保持硯面的乾燥。定期用清水沖洗並用軟布擦拭，可延長硯的使用壽命。
+                      硯應存放在乾燥通風的環境中，避免陽光直射和潮濕環境。使用後應及時清洗，並保持硯面的乾燥。
                     </p>
                   </div>
                 </div>
               </div>
               <div className="order-1 md:order-2">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%A2%A8_%E8%83%A1%E9%96%8B%E6%96%87%E4%BA%94%E5%8D%81%E9%80%B1%E5%B9%B4.jpg-Ij9Yd9Iy9Ij9Yd9Iy9Ij9Yd9Iy9Ij9Yd9Iy.jpeg"
-                  alt="硯"
+                  src="/images/inkstone.png"
+                  alt="硯台"
                   width={600}
                   height={600}
                   className="rounded-lg object-cover shadow-md mx-auto"
