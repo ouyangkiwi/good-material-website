@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/Image"
 import Link from "next/link"
 
 export default function CalligraphySchoolsPage() {
@@ -131,8 +131,8 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="篆書"
+                    src="/images/ancient-calligraphy.png"
+                    alt="篆書石刻"
                     width={600}
                     height={400}
                     className="h-full w-full object-cover"
@@ -142,6 +142,7 @@ export default function CalligraphySchoolsPage() {
                   <h3 className="text-xl font-bold">篆書</h3>
                   <p className="mt-2 text-gray-600">
                     篆書是中國最古老的書體之一，分為大篆和小篆。大篆包括甲骨文、金文等，小篆則是秦代統一文字後的標準字體。篆書結構勻稱，線條圓轉，具有濃厚的古典美。
+                    圖中所示為漢代石刻拓片，展現了早期漢字的莊重與古樸之美，這種石刻藝術不僅是書法的重要載體，也是研究古代文字演變的珍貴史料。
                   </p>
                   <div className="mt-4">
                     <Link
@@ -211,8 +212,8 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="楷書"
+                    src="/images/tang-calligraphy.jpeg"
+                    alt="顏真卿《劉中使帖》"
                     width={600}
                     height={400}
                     className="h-full w-full object-cover"
@@ -221,7 +222,7 @@ export default function CalligraphySchoolsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold">楷書</h3>
                   <p className="mt-2 text-gray-600">
-                    楷書起源於漢代，成熟於魏晉南北朝，是中國書法中最規範的書體。楷書結構方正，筆畫清晰，點畫分明，是初學書法的基礎書體。唐代的顏真卿、柳公權是楷書的代表人物。
+                    楷書起源於漢代，成熟於魏晉南北朝，是中國書法中最規範的書體。楷書結構方正，筆畫清晰，點畫分明，是初學書法的基礎書體。唐代的顏真卿、柳公權是楷書的代表人物。圖中所示為唐代書法大家顏真卿的《劉中使帖》，展現了其雄渾剛勁、氣勢磅礴的書法風格，被譽為「顏體楷書」的代表作。
                   </p>
                   <div className="mt-4">
                     <Link
@@ -251,8 +252,8 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="行書"
+                    src="/images/wei-jin-calligraphy.png"
+                    alt="王羲之《遠宦帖》"
                     width={600}
                     height={400}
                     className="h-full w-full object-cover"
@@ -261,7 +262,7 @@ export default function CalligraphySchoolsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold">行書</h3>
                   <p className="mt-2 text-gray-600">
-                    行書是介於楷書與草書之間的書體，兼具楷書的規範性和草書的流暢性。行書筆畫連貫，結構靈活，既保持了漢字的基本結構，又有一定的變化，是日常書寫中最常用的書體。
+                    行書是介於楷書與草書之間的書體，兼具楷書的規範性和草書的流暢性。行書筆畫連貫，結構靈活，既保持了漢字的基本結構，又有一定的變化，是日常書寫中最常用的書體。圖中所示為東晉「書聖」王羲之的《遠宦帖》，展現了行書的典雅流暢與自然灑脫，被譽為行書的典範之作。
                   </p>
                   <div className="mt-4">
                     <Link
@@ -291,8 +292,8 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="草書"
+                    src="/images/modern-calligraphy.jpeg"
+                    alt="于右任草書"
                     width={600}
                     height={400}
                     className="h-full w-full object-cover"
@@ -301,7 +302,7 @@ export default function CalligraphySchoolsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold">草書</h3>
                   <p className="mt-2 text-gray-600">
-                    草書是中國書法中最為奔放的書體，分為章草、今草和狂草。草書筆畫連綿，結構簡化，變化多端，具有極強的藝術表現力。草書的書寫需要深厚的書法功底和豐富的藝術修養。
+                    草書是中國書法中最為奔放的書體，分為章草、今草和狂草。草書筆畫連綿，結構簡化，變化多端，具有極強的藝術表現力。圖中所示為民國時期著名書法家于右任的草書作品，他創立了「標準草書」，將傳統草書簡化並提高其可讀性，對現代書法藝術產生了深遠影響。
                   </p>
                   <div className="mt-4">
                     <Link
@@ -344,7 +345,7 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-square overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/images/wei-jin-calligraphy.png"
                     alt="王羲之"
                     width={400}
                     height={400}
@@ -354,14 +355,14 @@ export default function CalligraphySchoolsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold">王羲之（303年-361年）</h3>
                   <p className="mt-2 text-gray-600">
-                    東晉書法家，被譽為「書聖」，其代表作《蘭亭序》被譽為「天下第一行書」。王羲之的書法風格典雅秀麗，筆法圓轉流暢，對後世書法藝術產生了深遠的影響。
+                    東晉書法家，被譽為「書聖」，其代表作《蘭亭序》被譽為「天下第一行書」。王羲之的書法風格典雅秀麗，筆法圓轉流暢，對後世書法藝術產生了深遠的影響。圖中所示為王羲之的《遠宦帖》，展現了其行書的典雅流暢與自然灑脫。
                   </p>
                 </div>
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-square overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/images/tang-calligraphy.jpeg"
                     alt="顏真卿"
                     width={400}
                     height={400}
@@ -371,7 +372,7 @@ export default function CalligraphySchoolsPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold">顏真卿（709年-785年）</h3>
                   <p className="mt-2 text-gray-600">
-                    唐代書法家，其楷書被稱為「顏體」，與柳公權的「柳體」並稱「顏柳」。顏真卿的書法風格雄渾厚重，筆力剛健，氣勢磅礴，代表作有《多寶塔碑》、《顏氏家廟碑》等。
+                    唐代書法家，其楷書被稱為「顏體」，與柳公權的「柳體」並稱「顏柳」。顏真卿的書法風格雄渾厚重，筆力剛健，氣勢磅礴，代表作有《多寶塔碑》、《顏氏家廟碑》等。圖中所示為顏真卿的《劉中使帖》，筆法雄健有力，結構嚴謹，充分展現了顏體楷書的特點。
                   </p>
                 </div>
               </div>
@@ -429,17 +430,17 @@ export default function CalligraphySchoolsPage() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-square overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
-                    alt="鄭板橋"
+                    src="/images/modern-calligraphy.jpeg"
+                    alt="于右任"
                     width={400}
                     height={400}
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold">鄭板橋（1693年-1765年）</h3>
+                  <h3 className="text-xl font-bold">于右任（1879年-1964年）</h3>
                   <p className="mt-2 text-gray-600">
-                    清代書法家、畫家，其書法被稱為「鄭體」，風格清新俊逸，筆法灑脫自如。鄭板橋的書法融合了魏晉風骨和唐宋筆法，又有自己的獨特創新，對後世書法藝術產生了深遠的影響。
+                    民國時期著名政治家、書法家，創立了「標準草書」，將傳統草書簡化並提高其可讀性。于右任的書法融合了傳統與現代，筆法灑脫自如，結構嚴謹，對現代書法藝術產生了深遠的影響。圖中所示為于右任的草書作品，展現了其獨特的書法風格。
                   </p>
                 </div>
               </div>

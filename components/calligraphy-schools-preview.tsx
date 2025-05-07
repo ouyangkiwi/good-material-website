@@ -60,8 +60,8 @@ export function CalligraphySchoolsPreview() {
             </div>
             <div className="order-1 md:order-2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="先秦至漢代書法"
+                src="/images/ancient-calligraphy.png"
+                alt="先秦至漢代石刻書法"
                 width={600}
                 height={400}
                 className="rounded-lg object-cover shadow-md"
@@ -71,8 +71,8 @@ export function CalligraphySchoolsPreview() {
           <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
             <div className="order-2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="魏晉南北朝書法"
+                src="/images/wei-jin-calligraphy.png"
+                alt="王羲之《遠宦帖》"
                 width={600}
                 height={400}
                 className="rounded-lg object-cover shadow-md"
@@ -81,7 +81,7 @@ export function CalligraphySchoolsPreview() {
             <div className="order-1">
               <h3 className="text-2xl font-bold">魏晉南北朝</h3>
               <p className="mt-4 text-gray-600">
-                魏晉時期，書法藝術進入了一個新的階段，草書與行書的發展，為書法藝術注入了新的活力。王羲之、王獻之等書法大家的出現，使書法藝術達到了新的高度。
+                魏晉時期，書法藝術進入了一個新的階段，草書與行書的發展，為書法藝術注入了新的活力。王羲之、王獻之等書法大家的出現，使書法藝術達到了新的高度。圖中展示的是「書聖」王羲之的《遠宦帖》，展現了東晉時期行草書的典雅流暢與自然灑脫。
               </p>
               <div className="mt-6 space-y-2">
                 <div className="flex items-center">
@@ -130,7 +130,7 @@ export function CalligraphySchoolsPreview() {
             <div className="order-2 md:order-1">
               <h3 className="text-2xl font-bold">唐宋元明清</h3>
               <p className="mt-4 text-gray-600">
-                唐代是中國書法藝術的黃金時期，顏真卿、柳公權等書法大家的出現，使楷書藝術達到了巔峰。宋元明清時期，書法藝術繼續發展，形成了眾多風格迥異的流派。
+                唐代是中國書法藝術的黃金時期，顏真卿、柳公權等書法大家的出現，使楷書藝術達到了巔峰。宋元明清時期，書法藝術繼續發展，形成了眾多風格迥異的流派。圖中展示的是唐代書法大家顏真卿的《劉中使帖》，展現了其雄渾剛勁、氣勢磅礴的書法風格。
               </p>
               <div className="mt-6 space-y-2">
                 <div className="flex items-center">
@@ -176,8 +176,8 @@ export function CalligraphySchoolsPreview() {
             </div>
             <div className="order-1 md:order-2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="唐宋元明清書法"
+                src="/images/tang-calligraphy.jpeg"
+                alt="顏真卿《劉中使帖》"
                 width={600}
                 height={400}
                 className="rounded-lg object-cover shadow-md"
@@ -187,8 +187,8 @@ export function CalligraphySchoolsPreview() {
           <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
             <div className="order-2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="近現代書法"
+                src="/images/modern-calligraphy.jpeg"
+                alt="于右任書法作品"
                 width={600}
                 height={400}
                 className="rounded-lg object-cover shadow-md"
@@ -197,7 +197,7 @@ export function CalligraphySchoolsPreview() {
             <div className="order-1">
               <h3 className="text-2xl font-bold">近現代</h3>
               <p className="mt-4 text-gray-600">
-                近現代書法藝術在傳統的基礎上，融入了新的時代元素，形成了多元化的發展趨勢。書法藝術不斷創新，不斷發展，展現出新的活力與魅力。
+                近現代書法藝術在傳統的基礎上，融入了新的時代元素，形成了多元化的發展趨勢。書法藝術不斷創新，不斷發展，展現出新的活力與魅力。圖中展示的是民國時期著名書法家于右任的作品，他創立了「標準草書」，將傳統草書簡化並提高其可讀性，對現代書法藝術產生了深遠影響。
               </p>
               <div className="mt-6 space-y-2">
                 <div className="flex items-center">
